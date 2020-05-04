@@ -11,7 +11,7 @@ int main()
         cin >>MB;
         Bytes = 1048576 * MB;
         Kbytes = 1024 * MB;
-        //cout << "\n\nPolicy-map receberá " << Bytes << " e " << Kbytes << ".\n\n";
+        //cout << "\n\nPolicy-map receberá " << Bytes << " e " << Kbytes << endl;
         cout << "#IMPUT \n\npolicy-map PM_VLAN" << vlan << "_INPUT \nclass CLASS_VLAN" << vlan << "_INPUT \npolice " << Bytes << " " << Kbytes << " conform-action set-dscp-transmit default exceed-action drop\n\n";
         cout << "#OUTPUT \n\npolicy-map PM_VLAN" << vlan << "_OUTPUT \nclass CLASS_VLAN" << vlan << "_OUTPUT \npolice " << Bytes << " " << Kbytes << " conform-action set-dscp-transmit default exceed-action drop\n\n";
 }
