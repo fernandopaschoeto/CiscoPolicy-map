@@ -9,6 +9,7 @@ int main()
         cin >> vlan;
         cout <<"\nInforme o valor em MB: ";
         cin >>MB;
+        cout << endl;
         Bytes = 1048576 * MB;
         Kbytes = 1024 * MB;
         //cout << "\n\nPolicy-map receberá " << Bytes << " e " << Kbytes << endl;
